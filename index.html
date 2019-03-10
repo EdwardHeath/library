@@ -8,10 +8,27 @@
 
 <body>
     <ul id='shelf'></ul>
-    <form>
-        <input type="text" name="title">
-    </form>
-    <button>Add Game</button>
+    <a href="#openModal">Add Game</a>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Add Game</h2>
+            Title<br>
+            <input type="text" name="title"><br />
+            Publisher<br>
+            <input type="text" name="publisher"><br />
+            Platform<br>
+            <input type="radio" name="platform" value="PS4">PS4<br>
+            <input type="radio" name="platform" value="iOS">iOS<br>
+            <input type="radio" name="platform" value="PC">PC<br>
+            <input type="radio" name="platform" value="Nintendo Switch">Nintendo Switch<br>
+            Status<br>
+            <input type="radio" name="status" value="still playing">still playing<br>
+            <input type="radio" name="status" value="shelved">shelved<br>
+            <input type="radio" name="status" value="wishlist">wishlist<br>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
     <script src='script.js'></script>
 </body>
 
